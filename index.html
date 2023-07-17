@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech World 2023</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23000000%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>💻</text></svg>" />
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- HTML 5 built header using details and summary to provide the desired functionality -->
+    <header>
+      <div class="navigation">
+        <details>
+            <summary>
+              <div class="header-content">
+                <!-- This is a trigger for toggling the current time popup menu -->
+                <button id="btnmodal">Current time</button>
+                <p>Menu</p>
+                <!-- This is a trigger for dark/light mode -->
+                <button id="btn">Enable Dark Mode</button>
+              </div>
+            </summary>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#photos">Photos</a></li>
+              <li><a href="#articles">Articles</a></li>
+            </ul>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <!-- I created a display for the current time using a popup menu -->
+    <div class="fixed-timer" id="modal">
+      <p>Time</p>
+      <p id="time">...</p>
+      <p>Day</p>
+      <p id="day">...</p>
+      <p>Month</p>
+      <p id="month">...</p>
+      <p>Year</p>
+      <p id="year">...</p>
+    </div>
+    <!-- This is my hero banner I decided on using a decorative approach and decided to use an CSS image setup -->
+    <div class="hero-banner">
+      <h1>Tech World</h1>
+    </div>
+    <!-- This is the main content of my site -->
+    <main>
+      <div class="container">
+        <!-- I added a general photo grid to give some emphasis on the style of the site -->
+        <div class="photos" id="photos">
+            <div class="photo-card"><img src="/images/card-1.jpg" alt=""></div>
+            <div class="photo-card"><img src="/images/card-2.jpg" alt=""></div>
+            <div class="photo-card"><img src="/images/card-3.jpg" alt=""></div>
+            <div class="photo-card"><img src="/images/card-4.jpg" alt=""></div>
+            <div class="photo-card"><img src="/images/card-5.jpg" alt=""></div>
+            <div class="photo-card"><img src="/images/card-6.jpg" alt=""></div>
+        </div>
+        <!-- This part of the site was very experimental with the style and I enjoyed creating the functionality -->
+        <article id="articles">
+            <hr>
+            <section class="accordion">
+                <h2>Latest Trends</h2>
+                <div class="marker"></div>
+                <p class="news">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                </p>
+            </section>
+            <hr>
+            <section class="accordion">
+                <h2>What The Future Holds</h2>
+                <div class="marker"></div>
+                <p class="news">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                </p>
+            </section>
+            <hr>
+            <section class="accordion">
+                <h2>How Can AI Help</h2>
+                <div class="marker"></div>
+                <p class="news">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, et magni
+                a sint iste ex sit eius illum vitae impedit esse similique tempore
+                voluptatem minima iure eum hic placeat asperiores.
+                </p>
+            </section>
+            <hr>
+        </article>
+      </div>
+    </main>
+    <!-- This is a generic call to action banner in a real world project this would be setup to link somewhere important to drive consumers to utilise the product/get in touch -->
+    <div class="cta-banner">
+      <img src="/images/hero.jpg" alt="">
+    </div>
+    <!-- This footer approach is to designed to be single page minimal design to encourage people to view my GitHub -->
+    <footer>
+      <div class="footer-content">
+        <nav>
+          <ul>
+            <li><a href="#">Go To Top</a></li>
+            <br>
+            <hr>
+            <br>
+            <li>Demo Website by Morgan Brown 2023©️</li>
+            <li><a href="https://github.com/MorganBrownDev" target="_blank">View GitHub ❤️</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- This is the my only script and it provides the interactions & functionality for the site -->
+      <script src="/js/interactions.js"></script>
+  </body>
+</html>
